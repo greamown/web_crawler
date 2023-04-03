@@ -30,6 +30,10 @@ python3 main.py -u https://24h.pchome.com.tw/ -v "NVIDIA GPU"
 - u: The URL of the crawler.
 - v: The value of search.
 
+<div align="center">
+  <img width="80%" height="80%" src="data/example.png">
+</div>
+
 ## Reference
 - Mariadb
     - https://mariadb.com/
