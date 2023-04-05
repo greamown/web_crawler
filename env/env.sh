@@ -34,6 +34,7 @@ sudo chmod u+x ./*.sh
 source ~/.bashrc
 conda create -n crawler python=3.9 
 conda activate crawler
+pip install -r requirements.txt
 cd ..
 
 # ---------------------------------------------------------
