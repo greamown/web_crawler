@@ -1,3 +1,4 @@
+#!/bin/bash
 # ---------------------------------------------------------
 
 # Color ANIS
@@ -53,5 +54,3 @@ sudo apt-get install libmariadb3
 sudo apt-get install libmariadb-dev
 pip3 install mariadb
 sudo apt-get install -y mariadb-server
-service mariadb start
-sudo mysql -u ${USER} -p

@@ -9,6 +9,12 @@ sudo chmod u+x ./env/*.sh
 sudo ./env/env.sh
 ```
 
+### Setting env
+```shell
+sudo chmod u+x ./env/*.sh
+sudo ./env/run.sh
+```
+
 ### DB GUI - Phpmyadmin
 ```shell
 sudo apt update
