@@ -9,10 +9,10 @@ sudo chmod u+x ./env/*.sh
 sudo ./env/env.sh
 ```
 
-### Setting env
+### Setting mariadb
 ```shell
-sudo chmod u+x ./env/*.sh
-sudo ./env/run.sh
+sudo service mariadb start
+sudo mysql -u ${USER} -p
 ```
 
 ### DB GUI - Phpmyadmin
@@ -31,6 +31,7 @@ sudo systemctl restart apache2
 
 ### Demo
 ```python
+conda activate crawler
 python3 main.py -u https://24h.pchome.com.tw/ -v "NVIDIA GPU"
 ```
 - u: The URL of the crawler.

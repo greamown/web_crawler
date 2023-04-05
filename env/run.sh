@@ -23,19 +23,20 @@ fi
 
 # ---------------------------------------------------------
 echo -e "${BLUE}"
-echo "----- Setting env -----"
-echo -e "${NC}"
-
-# Setting env
-conda activate crawler
-
-# ---------------------------------------------------------
-echo -e "${BLUE}"
 echo "----- Open mariadb -----"
 echo -e "${NC}"
 
 USER=$(cat ${USER} | jq -r '.USER')
 
 # Open mariadb
-service mariadb start
+sudo service mariadb start
 sudo mysql -u ${USER} -p
+
+# ---------------------------------------------------------
+echo -e "${BLUE}"
+echo "----- Setting env -----"
+echo -e "${NC}"
+
+# Setting env
+conda activate crawler
+
